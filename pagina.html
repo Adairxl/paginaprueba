@@ -1,0 +1,82 @@
+<!-- AWP_In_Variable Name='"ENVIODATOSM2".ARRANQUE' -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta http-equiv="refresh" content="1">
+    <meta charset="UTF-8">
+    <title>Pagina web</title>
+    <style media="screen"> 
+    
+        table{
+            border: 5px solid silver;
+            padding: 1px;
+            width: 60%;    
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 5px;
+        text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+  <center>
+   <h1><center> MONITOREO VFD MM440</center> </h1>
+    <table>
+        <tr> <th colspan="2"> ESTADO DE VFD MM440</th></tr>
+        <tr> <td  width="50%">ESTADO DEL MOTOR </td> <th>:="RECIVIRDATOSM2".FALLO_300:</th></tr>
+        <tr> <td  width="50%">MOTOR</td> <th>:="RECIVIRDATOSM2".M_ON300:</th></tr>
+        <tr><td  width="50%">GIRO</td> <th>:="RECIVIRDATOSM2".GIRO_300:</th></tr>
+        
+    </table>
+</center>
+   <h1><center>MONITOREO PROCESO MICROFIBRA</center></h1>
+   
+ <center><table>
+  <tr>
+       <th colspan="4" >SECUENCIA DE ARRANQUE</th> 
+    </tr>
+    <tr>
+    <td width="25%">NO. SECUENCIA</td>
+    <th >
+       :="RECIVIRDATOSM3".NUMSECUENCIA: 
+    </th>
+    <td width="25%"> ESTADO</td>
+    <th width="25%" > :="RECIVIRDATOSM3".ESTADO:</th>
+    </tr>
+    </table>
+</center>
+   <center>
+      <table>
+            <tr >
+    <th width="33%">SECUENCIA1 = C1,V2,C2,V3,M 50HZ</th >
+    <th width="33%">SECUENCIA2 = C1,V2,M 30HZ </th>
+    <th width="33%"> SECUENCIA3 = C2,V3,M 20HZ</th>
+    </tr>
+      </table>
+   </center>
+    <center><table>
+  <tr>
+       <th colspan="2" >TIPO DE MAQUINAS</th> 
+    </tr>
+<tr> <th width="50%"> MAQUINA</th> <th> SALIDA</th></tr>
+   <tr><td>CORTADOR1</td> <th>:="RECIVIRDATOSM3".C1:</th></tr>
+   <tr><td>VENTILADOR2</td><th>:="RECIVIRDATOSM3".V2:</th></tr>
+   <tr><td>CORTADOR2</td><th>:="RECIVIRDATOSM3".C2:</th></tr>
+   <tr><td>VENTILADOR3</td><th>:="RECIVIRDATOSM3".V3:</th></tr>
+   <tr><td>MEZCLADOR</td><th>:="RECIVIRDATOSM3".M:</th></tr>
+    </table>
+</center>
+<center>
+    <table>
+        <tr> <th colspan="2">ALIMENTADOR</th></tr>
+        <tr><th width="50%">FRECUENCIA</th><th>:="RECIVIRDATOSM3".FRECUENCIA:</th></tr>
+    </table>
+</center>
+
+<br><br> 
+    <a href="es.html"> IR A LA VENTANA DE CONTROL </a>
+</body>
+</html>

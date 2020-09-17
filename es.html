@@ -1,0 +1,135 @@
+<!-- AWP_In_Variable Name='"ENVIODATOSM2".ARRANQUE' -->
+<!-- AWP_In_Variable Name='"ENVIODATOSM2".GIRO' -->
+<!-- AWP_In_Variable Name='"ENVIODATOSM2".JOGD' -->
+<!-- AWP_In_Variable Name='"ENVIODATOSM2".JOGI' -->
+<!-- AWP_In_Variable Name='"ENVIODATOSM2".FRECUENCIA' -->
+
+<!-- AWP_In_Variable Name='"ENVIODATOSM3".ARRANQUE' -->
+<!-- AWP_In_Variable Name='"ENVIODATOSM3".SECUENCIA1' -->
+<!-- AWP_In_Variable Name='"ENVIODATOSM3".SECUENCIA3' -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <style media="screen"> 
+    
+        table{
+            border: 5px solid silver;
+            padding: 1px;
+            width: 60%;    
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 5px;
+        text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1><center>CONTROL DE VFD MM440</center></h1>
+   <center>
+  <table >
+  <tr>
+       <th colspan="2" >PLC MESA2</th> 
+    </tr>
+    <tr>
+    <th width="50%" >
+    <form clas="" action="" method="get">
+        <input type="submit" value="ARRANQUE">
+        <input type="hidden" name='"ENVIODATOSM2".ARRANQUE' value="true">
+    </form>  
+    </th>
+ <th  >
+    <form clas="" action="" method="get">
+     <input type="submit" value="PARO">
+    <input type="hidden" name='"ENVIODATOSM2".ARRANQUE' value="false">
+    <input type="hidden" name='"ENVIODATOSM2".JOGD' value="false">
+    <input type="hidden" name='"ENVIODATOSM2".JOGI' value="false">
+    </form> 
+ </th>
+    </tr>
+    <tr>
+        <th>
+             <form clas="" action="" method="get">
+        <input type="submit" value="SENTIDO IZQUIERDA">
+        <input type="hidden" name='"ENVIODATOSM2".GIRO' value="true">
+    </form>  
+        </th>
+        <th>
+            <form clas="" action="" method="get">
+        <input type="submit" value="SENTIDO DERECHA">
+        <input type="hidden" name='"ENVIODATOSM2".GIRO' value="false">
+    </form>  
+        </th>
+    </tr>
+    <tr>
+         <th>
+             <form clas="" action="" method="get">
+        <input type="submit" value="JOG DERECHA">
+        <input type="hidden" name='"ENVIODATOSM2".JOGD' value="true">
+    </form>  
+        </th>
+         <th>
+             <form clas="" action="" method="get">
+        <input type="submit" value="JOG IZQUIERDA">
+        <input type="hidden" name='"ENVIODATOSM2".JOGI' value="true">
+    </form>  
+        </th>
+    </tr>
+    <tr>
+        <th colspan="2" >CONTROL DE VELOCIDAD</th>
+    </tr>
+    <tr>
+        <th>FRECUENCIA (HZ) </th>
+        <th> <form clas="" action="" method="get">
+        <input type="text" name='"ENVIODATOSM2".FRECUENCIA' placeholder="Ingrese la Frecuencia" >
+        <input type="submit" value="ENVIAR">
+    </form>  </th>
+    </tr>
+    </table>
+     <h1><center>CONTROL DE PROCESO DE MICROFIBRA</center></h1>
+     <center><table>
+         <tr>
+        <th colspan="2" >PLC MESA 3</th>
+    </tr>
+         <tr><th width="50%" >
+             <form clas="" action="" method="get">
+        <input type="submit" value="ARRANQUE">
+        <input type="hidden" name='"ENVIODATOSM3".ARRANQUE' value="true">
+    </form>  </th>
+         <th>
+            <form clas="" action="" method="get">
+        <input type="submit" value="PARO">
+        <input type="hidden" name='"ENVIODATOSM3".ARRANQUE' value="false">
+    </form>  
+             </th></tr>
+         <tr><th>
+             <form clas="" action="" method="get">
+        <input type="submit" value="SECUENCIA1">
+        <input type="hidden" name='"ENVIODATOSM3".SECUENCIA1' value="true">
+        <input type="hidden" name='"ENVIODATOSM3".SECUENCIA3' value="false">
+    </form>  
+         </th><th>
+             <form clas="" action="" method="get">
+        <input type="submit" value="SECUENCIA3">
+        <input type="hidden" name='"ENVIODATOSM3".SECUENCIA3' value="true">
+            <input type="hidden" name='"ENVIODATOSM3".SECUENCIA1' value="false">
+    </form>  
+         </th></tr>
+         <tr><th colspan="2">
+             <form clas="" action="" method="get">
+        <input type="submit" value="SECUENCIA2">
+        <input type="hidden" name='"ENVIODATOSM3".SECUENCIA1' value="false">
+        <input type="hidden" name='"ENVIODATOSM3".SECUENCIA3' value="false">
+    </form>  
+         </th></tr>
+     </table></center>
+    </center>
+
+    <br><br> 
+    <a href="pagina.html"> IR A LA VENTANA DE MONITOREO </a>
+   
+</body>
+</html>
